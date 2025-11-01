@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-93-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - HÉRITAGE ET RÉSILIENCE DES PEUPLES AUTOCHTONES : UNE EXPLORATION PROFONDE</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - ORIGINES DES PEUPLES AUTOCHTONES D'AMÉRIQUE : UN VOYAGE À TRAVERS LE TEMPS</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Les premières migrations humaines vers les Amériques</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Établissement des premières civilisations</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Évolution des cultures précolombiennes</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - DIVERSITÉ CULTURELLE ET LINGUISTIQUE DES CIVILISATIONS AUTOCHTONES</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Langues autochtones et leur importance</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Traditions et pratiques culturelles</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Rôle des mythes et légendes</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - INNOVATIONS ET SYSTÈMES SOCIAUX : CONTRIBUTIONS DES PEUPLES AUTOCHTONES</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Avancées agricoles et alimentaires</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Architecture et urbanisme</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Systèmes sociaux et politiques</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - IMPACT DE LA COLONISATION : DÉFIS ET RÉSILIENCE</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Premiers contacts et leurs conséquences</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Déplacements forcés et assimilation</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Résistance et adaptation</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - FIGURES ÉMINENTES ET LEADERS AUTOCHTONES : HÉROS DE LA RÉSILIENCE</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Leaders historiques et leur héritage</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Figures contemporaines et leur impact</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Portraits inspirants de communautés</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - REVENDICATIONS ET DROITS : LUTTE POUR LA RECONNAISSANCE</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Droits territoriaux et souveraineté</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Justice sociale et réparations</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Reconnaissance culturelle et linguistique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - RÔLE ACTUEL DANS LA SOCIÉTÉ CONTEMPORAINE : ENGAGEMENT ET ACTIVISME</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Participation politique et sociale</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Activisme environnemental</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Initiatives éducatives et culturelles</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - CONTRIBUTION À LA PRÉSERVATION DE L'ENVIRONNEMENT : SAVOIRS ANCESTRAUX</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Pratiques durables et écologiques</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Gestion des ressources naturelles</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Collaboration avec la science moderne</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - CÉLÉBRER LA DIVERSITÉ ET LA RÉSILIENCE DES PEUPLES AUTOCHTONES</a></li>
+  </ul>
+
+  <p><a href="ID-0-93-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
